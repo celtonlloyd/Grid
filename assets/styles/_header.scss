@@ -1,0 +1,46 @@
+header {
+    nav {
+        position: absolute;
+        // top: 0;
+        // bottom: 0;
+        left: 8rem;
+        // right: 0;
+        width: 100%;
+    }
+    .logo {
+        color: $black-text;
+        font-size: 1.6rem;
+        text-shadow: 0.5px 0.5px $white-transparent;
+        font-weight: 700;
+    }
+    .nav-links a {
+        color: #908B88;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-left: 2rem;
+        &:hover {
+            color: $accent-color; 
+        }
+    }
+}
+.hero-img img {
+    height: 43rem;
+    object-fit: cover;
+}
+.col1-2 {
+    flex: 0 1 50%;
+}
+.hero {
+    background: $hero-bg;
+    // position: relative;
+}
+.hero-section {
+    h4, p {
+        color: $para-color;
+    }
+    .btn-hero {
+        border: 2.5px solid black;
+        color: $black-text;
+               
+    }
+}
