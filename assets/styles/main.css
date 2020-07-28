@@ -90,20 +90,47 @@ html {
       flex-wrap: wrap;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid4col {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
 .inline-block {
   display: inline-block;
 }
 
+figure {
+  font-size: 0;
+}
+
 img {
   width: 100%;
+  font-size: 0;
 }
 
 .padding {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 
 .ptb {
   padding: 1rem 0;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .btn {
@@ -120,15 +147,20 @@ a {
   display: inline-block;
 }
 
-h1 {
-  font-size: 2.2rem;
+h1, h2 {
+  font-size: 2.3rem;
   line-height: 1.2;
   font-weight: 300;
   color: #273131;
 }
 
-h1 strong {
+h1 strong, h2 strong {
   font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 h4 {
@@ -149,7 +181,7 @@ header nav {
 header .logo {
   color: #273131;
   font-size: 1.6rem;
-  text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.87);
+  text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.527);
   font-weight: 700;
 }
 
@@ -189,6 +221,276 @@ header .nav-links a:hover {
   color: #273131;
 }
 
+article h4 {
+  color: #ffdb62;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+article p {
+  color: #B6AFA9;
+}
+
+.skills {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.skills .skills-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 20.25rem;
+}
+
+.skills .skills-section {
+  background-color: #ECAF4E;
+  padding-right: 1.5rem;
+}
+
+.skills .skills-section h4 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+}
+
+.skill, .percent {
+  font-size: 0.89rem;
+  font-weight: 900;
+  color: #273131;
+}
+
+.percent {
+  color: rgba(255, 255, 255, 0.863);
+  font-size: 0.89rem;
+}
+
+.hr {
+  width: 100%;
+  background: white;
+  margin: 0.5rem 0 1rem;
+}
+
+.hr:last-child {
+  margin-bottom: 0;
+}
+
+.hr1, .hr2, .hr3 {
+  width: 90%;
+  background: black;
+  height: 2px;
+}
+
+.hr2 {
+  width: 70%;
+}
+
+.hr3 {
+  width: 80%;
+}
+
+.summary {
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.summary .icon {
+  font-size: 3rem;
+  color: white;
+}
+
+.summary p {
+  font-size: 1.1rem;
+}
+
+.interface {
+  background-color: #ECAF4E;
+}
+
+.m-strategy {
+  background-color: #FC683E;
+}
+
+.m-app {
+  background-color: #161616;
+}
+
+.coding {
+  color: #82a3a3;
+}
+
+.coding h3 {
+  color: #4e6262;
+}
+
+.coding .icon {
+  color: #273131;
+}
+
+.experience-img img {
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.experiences {
+  background-color: #FC683E;
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.experiences h2 {
+  color: white;
+}
+
+.experiences h3 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.experiences h3 span {
+  color: #273131;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.experiences .fas {
+  margin-right: 0.8rem;
+  position: relative;
+  top: 4px;
+  color: white;
+  font-size: 2rem;
+}
+
+.experiences p {
+  margin-left: 3.7rem;
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.education {
+  background-color: #ECAF4E;
+}
+
+.education h3 span {
+  color: rgba(0, 0, 0, 0.322);
+}
+
+.form-section {
+  background-color: #FC683E;
+  -ms-grid-rows: 37.5rem;
+      grid-template-rows: 37.5rem;
+}
+
+.form-section h2 {
+  color: #ffffff;
+}
+
+.form-section h4 {
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.form-section form input, .form-section form textarea {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: #FC683E;
+  border: 0;
+  border-bottom: 0.5px solid #ECAF4E;
+  padding: 1rem 0;
+  color: rgba(255, 255, 255, 0.527);
+}
+
+.form-section form button {
+  background-color: #ffffff;
+  padding: 1rem 8rem;
+  margin: 0;
+  border: 0;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.548);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.form-section form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+}
+
+.form-section form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+}
+
+.form-section form ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+}
+
+.form-section form ::placeholder {
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+}
+
+.contact-img img {
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact {
+  background-color: #161616;
+  color: rgba(255, 255, 255, 0.322);
+  font-weight: 300;
+}
+
+.contact h3 {
+  color: rgba(255, 255, 255, 0.753);
+}
+
+.contact .fas {
+  padding-right: 1rem;
+  color: rgba(255, 255, 255, 0.322);
+}
+
+.contact .active {
+  color: #ecaf4ea4;
+}
+
+.map {
+  background-color: #FC683E;
+  padding: 0;
+}
+
+.map div {
+  padding: 2rem 0;
+}
+
+.map iframe {
+  width: 100%;
+  height: 30rem;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.767);
+          box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.767);
+}
+
+footer {
+  padding: 8rem 0;
+  color: #cac2bc;
+}
+
+footer small {
+  font-size: 1.1rem;
+}
+
+footer small span {
+  color: #ffe968;
+}
+
+footer .social-icon {
+  padding-top: 3rem;
+}
+
+footer .social-icon i {
+  margin-left: 4rem;
+  color: #B6AFA9;
+}
+
 /* responsive */
 @media screen and (max-width: 768px) {
   .flex {
@@ -214,11 +516,11 @@ header .nav-links a:hover {
   }
   .bar {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 0.527);
     font-size: 1.5rem;
     padding-top: 1rem;
   }
-  input:checked ~ nav {
+  input:checked ~ nav, .form-section form textarea:checked ~ nav {
     display: inline-block;
     position: fixed;
     top: 0;
@@ -231,7 +533,7 @@ header .nav-links a:hover {
     padding-top: 8rem;
     border-radius: 0 0 5px 5px;
   }
-  input:checked ~ label .fa::before {
+  input:checked ~ label .fa::before, .form-section form textarea:checked ~ label .fa::before {
     content: '\f00d';
   }
 }

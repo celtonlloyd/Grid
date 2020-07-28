@@ -1,0 +1,219 @@
+article {
+    h4 {
+        color: $accent-color/0.8;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    p {
+        color: $para-color;
+    }
+}
+.skills {
+    align-items: stretch;
+        .skills-img img  {
+            object-fit: cover;
+            height: 20.25rem;
+        }
+        .skills-section {
+            background-color: $accent-color;
+            padding-right: 1.5rem;
+            h4 {
+                font-weight: 300;
+                color: $white-transparent;
+                font-size: 1rem;
+            }
+        }
+}
+.skill, .percent {
+    font-size: 0.89rem;
+    font-weight: 900;
+    color: $black-text;
+}
+.percent {
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 0.89rem;
+}
+.hr {
+    width: 100%;
+    background: white;
+    margin: 0.5rem 0 1rem;
+     &:last-child {
+         margin-bottom: 0;
+    } 
+}
+
+.hr1, .hr2, .hr3 {
+    width: 90%;
+    background: black;
+    height: 2px;
+}
+.hr2 {
+    width: 70%;
+}
+.hr3 {
+    width: 80%;
+}
+
+.summary {
+    color: $white-transparent;
+    .icon{
+        font-size: 3rem;
+        color: white;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+   
+}
+.interface {
+    background-color: $accent-color;
+}
+.m-strategy {
+    background-color: $accent-color-2;
+}
+.m-app {
+    background-color: $black-bg;
+}
+.coding {
+    color: $black-text/0.3;
+    h3 {
+        color: $black-text/0.5;
+    }
+    .icon {
+        color: $black-text;
+    }
+}
+
+.experience-img img {
+    height: 22rem;
+    object-fit: cover;
+}
+
+.experiences {
+    background-color: $accent-color-2;
+    color: $white-transparent;
+    h2 {
+        color: white;
+    }
+    h3 {
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.863);
+        & span {
+            color: $black-text;
+            font-size: 1.05rem;
+            font-weight: 700;
+        }
+    }
+    .fas {
+        margin-right: 0.8rem;
+        position: relative;
+        top: 4px;
+        color: white;
+        font-size: 2rem;
+    }
+    
+    p {
+        margin-left: 3.7rem;
+        color: $white-transparent;
+    }
+    
+}
+.education {
+    background-color: $accent-color;
+    h3 span {
+        color: rgba(0, 0, 0, 0.322);
+    }
+}
+
+.form-section {
+    background-color: $accent-color-2;
+    grid-template-rows: 37.5rem;
+    h2 {
+        
+        color: #ffffff;
+    }
+    h4 {
+        color: $white-transparent;
+    }
+
+    form {
+        input {
+            width: 100%;
+            margin-bottom: 2rem;
+            background-color: $accent-color-2;
+            border: 0;
+            border-bottom: 0.5px solid $accent-color;
+            padding: 1rem 0;
+            color: $white-transparent;
+        
+        }
+        textarea {
+            @extend input;
+        }
+        button {
+            background-color: #ffffff;
+            padding: 1rem 8rem;
+            margin: 0;
+            border: 0;
+            font-weight: 300;
+            color: rgba(0, 0, 0, 0.548);
+            font-size: 1rem;
+            cursor: pointer;
+        }
+       
+
+        ::placeholder { 
+            color: $white-transparent; 
+            font-size: 1rem;
+        }
+    }
+}
+
+.contact-img img {
+    height: 40rem;
+    object-fit: cover;
+}
+.contact {
+    background-color: $black-bg;
+    color: rgba(255, 255, 255, 0.322);
+    font-weight: 300;
+    h3 {
+        color: rgba(255, 255, 255, 0.753);       
+    }
+    .fas {
+        padding-right: 1rem;
+        color: rgba(255, 255, 255, 0.322);
+    }
+    .active {
+        color: #ecaf4ea4;
+    }
+}
+.map {
+    background-color: $accent-color-2;
+    padding: 0;
+    div {
+        padding: 2rem 0;      
+    }
+    iframe {
+    width: 100%;
+    height: 30rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.767);
+    }
+}
+footer {
+    padding: 8rem 0;
+    color: $para-color/0.9;
+    small {
+        font-size: 1.1rem;
+        & span {
+            color: $accent-color/0.75;
+        }       
+    }
+    .social-icon {
+        padding-top: 3rem;
+        i {
+        margin-left: 4rem;
+        color: $para-color;
+        }   
+    }
+}
