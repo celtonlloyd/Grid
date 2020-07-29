@@ -1,6 +1,7 @@
+// section 1
 article {
     h4 {
-        color: $accent-color/0.8;
+        color: rgba( $accent-color, 0.83);
         font-weight: 400;
         font-size: 1rem;
     }
@@ -12,7 +13,7 @@ article {
     align-items: stretch;
         .skills-img img  {
             object-fit: cover;
-            height: 20.25rem;
+            height: 100%;
         }
         .skills-section {
             background-color: $accent-color;
@@ -53,7 +54,7 @@ article {
 .hr3 {
     width: 80%;
 }
-
+// section 2
 .summary {
     color: $white-transparent;
     .icon{
@@ -62,11 +63,7 @@ article {
     }
     p {
         font-size: 1.1rem;
-    }
-   
-}
-.fa-desktop-alt{
-    font-family: "Font Awesome 5 Free";
+    } 
 }
 .interface {
     background-color: $accent-color;
@@ -80,15 +77,16 @@ article {
 .coding {
     color: $black-text/0.3;
     h3 {
-        color: $black-text/0.5;
+        color: rgba($black-text, 0.6);
+        font-weight: 600;
     }
     .icon {
         color: $black-text;
     }
 }
-
+// section 3
 .experience-img img {
-    height: 22rem;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -119,13 +117,14 @@ article {
         color: $white-transparent;
     }    
 }
+// section 4
 .education {
     background-color: $accent-color;
     h3 span {
         color: rgba(0, 0, 0, 0.322);
     }
 }
-
+// section 5
 .form-section {
     background-color: $accent-color-2;
     grid-template-rows: 37.5rem;
@@ -163,13 +162,13 @@ article {
         }      
         ::placeholder { 
             color: $white-transparent; 
-            font-size: 1rem;
+            font-size: 1rem;           
         }
     }
 }
 
 .contact-img img {
-    height: 40rem;
+    height: 100%;
     object-fit: cover;
 }
 .contact {
@@ -187,6 +186,7 @@ article {
         color: #ecaf4ea4;
     }
 }
+// section 6
 .map {
     background-color: $accent-color-2;
     padding: 0;

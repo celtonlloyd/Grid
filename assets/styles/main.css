@@ -196,11 +196,11 @@ header .nav-links a {
   margin-left: 2rem;
 }
 
-header .nav-links a:hover {
+header .nav-links a.active {
   color: #ECAF4E;
 }
 
-header .nav-links a.active {
+header .nav-links a:hover {
   color: #ECAF4E;
 }
 
@@ -230,7 +230,7 @@ header .nav-links a.active {
 }
 
 article h4 {
-  color: #ffdb62;
+  color: rgba(236, 175, 78, 0.83);
   font-weight: 400;
   font-size: 1rem;
 }
@@ -248,7 +248,7 @@ article p {
 .skills .skills-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 20.25rem;
+  height: 100%;
 }
 
 .skills .skills-section {
@@ -310,10 +310,6 @@ article p {
   font-size: 1.1rem;
 }
 
-.fa-desktop-alt {
-  font-family: "Font Awesome 5 Free";
-}
-
 .interface {
   background-color: #ECAF4E;
 }
@@ -331,7 +327,8 @@ article p {
 }
 
 .coding h3 {
-  color: #4e6262;
+  color: rgba(39, 49, 49, 0.6);
+  font-weight: 600;
 }
 
 .coding .icon {
@@ -339,7 +336,7 @@ article p {
 }
 
 .experience-img img {
-  height: 22rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -441,7 +438,7 @@ article p {
 }
 
 .contact-img img {
-  height: 40rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -570,13 +567,13 @@ footer .social-icon i:first-child {
     display: inline-block;
     position: fixed;
     top: 0;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    background-color: rgba(245, 227, 215, 0.9);
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(245, 227, 215, 0.95);
     z-index: 111;
     padding-top: 8rem;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
   }
   input:checked ~ label .fa::before, .form-section form textarea:checked ~ label .fa::before {

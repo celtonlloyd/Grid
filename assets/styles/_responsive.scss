@@ -13,13 +13,12 @@ html {
         grid-template-columns: 1fr;
     }
 header {
-    & .container {
+    .container {
             max-width: 90%;
             padding: 0.5rem 0;
         }
     nav {
-            position: static;
-            
+            position: static;           
         }
     .logo {
             font-size: 2rem;
@@ -66,13 +65,13 @@ footer {
         display: inline-block;
         position: fixed;
         top: 0;
-        bottom: 2rem;
-        left: 0;
-        right: 0;
-        background-color: rgba($hero-bg, 0.9);
+        bottom: 0.5rem;
+        left: 0.5rem;
+        right: 0.5rem;
+        background-color: rgba($hero-bg, 0.95);
         z-index: 111;
         padding-top: 8rem;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 10px 10px ;
         text-align: center;
     }
 

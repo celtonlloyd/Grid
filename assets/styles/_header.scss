@@ -1,13 +1,10 @@
 header {
     nav {
         position: absolute;
-        // top: 0;
-        // bottom: 0;
         left: 8rem;
-        // right: 0;
         width: 100%;  
         input, .bar {
-            display: none;
+        display: none;
         }      
     }
     .logo {
@@ -22,12 +19,13 @@ header {
         font-weight: 600;
         font-size: 0.9rem;
         margin-left: 2rem;
-        &:hover {
-            color: $accent-color; 
-        }
         &.active {
             color: $accent-color;
         }
+        &:hover {
+            color: $accent-color; 
+        }
+        
     }
 }
 .hero-img img {
