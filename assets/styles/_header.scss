@@ -25,6 +25,9 @@ header {
         &:hover {
             color: $accent-color; 
         }
+        &.active {
+            color: $accent-color;
+        }
     }
 }
 .hero-img img {

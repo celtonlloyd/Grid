@@ -200,6 +200,10 @@ header .nav-links a:hover {
   color: #ECAF4E;
 }
 
+header .nav-links a.active {
+  color: #ECAF4E;
+}
+
 .hero-img img {
   height: 43rem;
   -o-object-fit: cover;
@@ -369,7 +373,7 @@ article p {
 }
 
 .experiences p {
-  margin-left: 3.7rem;
+  margin-left: 3.5rem;
   color: rgba(255, 255, 255, 0.527);
 }
 
