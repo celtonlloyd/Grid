@@ -545,10 +545,9 @@ footer .social-icon i:first-child {
   .nav-links {
     display: none;
   }
-  .nav-links a {
-    color: white;
+  .nav-links li a {
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
   .logo,
   .bar {
@@ -570,8 +569,7 @@ footer .social-icon i:first-child {
     bottom: 10rem;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.897);
-    color: white;
+    background-color: rgba(245, 227, 215, 0.9);
     z-index: 111;
     padding-top: 8rem;
     border-radius: 0 0 5px 5px;

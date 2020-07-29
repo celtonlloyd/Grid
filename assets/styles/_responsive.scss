@@ -38,15 +38,12 @@ footer {
     }
 
     /* toggle */
-    // .fa-bars {
-    //     display: inline-block;
-    // }
+
     .nav-links {
         display: none;
-         a {
-            color: white;
+         li a {
             margin: 2rem 0;
-            font-size: 2rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -72,8 +69,7 @@ footer {
         bottom: 10rem;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.897);
-        color: white;
+        background-color: alpha($hero-bg, 0.1);
         z-index: 111;
         padding-top: 8rem;
         border-radius: 0 0 5px 5px;
