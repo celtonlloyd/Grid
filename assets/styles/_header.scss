@@ -5,7 +5,10 @@ header {
         // bottom: 0;
         left: 8rem;
         // right: 0;
-        width: 100%;
+        width: 100%;  
+        input, .bar {
+            display: none;
+        }      
     }
     .logo {
         color: $black-text;
@@ -13,6 +16,7 @@ header {
         text-shadow: 0.5px 0.5px $white-transparent;
         font-weight: 700;
     }
+    
     .nav-links a {
         color: #908B88;
         font-weight: 600;

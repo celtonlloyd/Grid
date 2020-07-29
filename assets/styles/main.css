@@ -178,6 +178,10 @@ header nav {
   width: 100%;
 }
 
+header nav input, header nav .form-section form textarea, .form-section form header nav textarea, header nav .bar {
+  display: none;
+}
+
 header .logo {
   color: #273131;
   font-size: 1.6rem;
@@ -268,7 +272,7 @@ article p {
 .hr {
   width: 100%;
   background: white;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 1.5rem;
 }
 
 .hr:last-child {
@@ -300,6 +304,10 @@ article p {
 
 .summary p {
   font-size: 1.1rem;
+}
+
+.fa-desktop-alt {
+  font-family: "Font Awesome 5 Free";
 }
 
 .interface {
@@ -491,40 +499,75 @@ footer .social-icon i {
   color: #B6AFA9;
 }
 
+footer .social-icon i:first-child {
+  margin-left: 0;
+}
+
 /* responsive */
 @media screen and (max-width: 768px) {
-  .flex {
+  html {
+    font-size: 14px;
+  }
+  .flex-column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  /* toggle */
-  .fa-bars {
-    display: inline-block;
+  .span2 {
+    grid-column: span 1;
   }
-  nav {
+  .grid4col {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header .container {
+    max-width: 90%;
+    padding: 0.5rem 0;
+  }
+  header nav {
+    position: static;
+  }
+  header .logo {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  .skills-section {
+    padding-bottom: 3rem;
+  }
+  footer {
+    padding: 2rem 0;
+  }
+  .padding {
+    padding: 3rem;
+  }
+  /* toggle */
+  .nav-links {
     display: none;
   }
-  nav .nav a {
+  .nav-links a {
     color: white;
+    margin: 2rem 0;
+    font-size: 2rem;
   }
   .logo,
   .bar {
     position: relative;
     z-index: 999;
   }
-  .bar {
+  header nav .bar {
     display: inline-block;
-    color: rgba(255, 255, 255, 0.527);
+    position: relative;
+    bottom: 5px;
+    color: #ECAF4E;
     font-size: 1.5rem;
     padding-top: 1rem;
   }
-  input:checked ~ nav, .form-section form textarea:checked ~ nav {
+  input:checked ~ .nav-links, .form-section form textarea:checked ~ .nav-links {
     display: inline-block;
     position: fixed;
     top: 0;
-    bottom: 40%;
+    bottom: 10rem;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.897);
@@ -532,6 +575,7 @@ footer .social-icon i {
     z-index: 111;
     padding-top: 8rem;
     border-radius: 0 0 5px 5px;
+    text-align: center;
   }
   input:checked ~ label .fa::before, .form-section form textarea:checked ~ label .fa::before {
     content: '\f00d';

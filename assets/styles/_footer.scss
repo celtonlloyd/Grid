@@ -1,0 +1,20 @@
+footer {
+    padding: 8rem 0;
+    color: $para-color/0.9;
+    small {
+        font-size: 1.1rem;
+        & span {
+            color: $accent-color/0.75;
+        }       
+    }
+    .social-icon {
+        padding-top: 3rem;
+        i {
+        margin-left: 4rem;
+        color: $para-color;
+        &:first-child {
+            margin-left: 0;
+        }
+        }   
+    }
+}

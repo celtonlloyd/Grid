@@ -1,16 +1,52 @@
 /* responsive */
 @media screen and (max-width: 768px) {
-    .flex {
+html {
+        font-size: 14px;
+    }
+.flex-column {
         flex-direction: column;
     }
-    /* toggle */
-    .fa-bars {
-        display: inline-block;
+.span2 {
+        grid-column: span 1;
     }
+.grid4col {
+        grid-template-columns: 1fr;
+    }
+header {
+    & .container {
+            max-width: 90%;
+            padding: 0.5rem 0;
+        }
     nav {
+            position: static;
+            
+        }
+    .logo {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
+.skills-section {
+        padding-bottom: 3rem;
+    }
+footer {
+        padding: 2rem 0;
+    }
+
+.padding {
+        padding: 3rem ;
+    }
+
+    /* toggle */
+    // .fa-bars {
+    //     display: inline-block;
+    // }
+    .nav-links {
         display: none;
-        .nav a {
+         a {
             color: white;
+            margin: 2rem 0;
+            font-size: 2rem;
         }
     }
 
@@ -20,18 +56,20 @@
         z-index: 999;
     }
 
-    .bar {
+    header nav .bar { 
         display: inline-block;
-        color: $white-transparent;
+        position: relative;
+        bottom: 5px;
+        color: $accent-color;
         font-size: 1.5rem;
         padding-top: 1rem;
     }
 
-    input:checked ~ nav {
+    input:checked ~ .nav-links {
         display: inline-block;
         position: fixed;
         top: 0;
-        bottom: 40%;
+        bottom: 10rem;
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.897);
@@ -39,6 +77,7 @@
         z-index: 111;
         padding-top: 8rem;
         border-radius: 0 0 5px 5px;
+        text-align: center;
     }
 
     input:checked ~ label .fa::before {

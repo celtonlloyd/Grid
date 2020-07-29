@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SASS</title>
+    <title>GRID</title>
     <link rel="stylesheet" href="assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css">
 </head>
 <body>
     <header>
-        <nav class="container flex">
+        <nav class="container flex ">
             <a href="index.html" class="logo">Stimulus</a>
-            <ul class="nav-links flex">
+            <input type="checkbox" id="hamburger-menu">
+        <label class="bar" for="hamburger-menu"><i class="fa fa-bars"></i></label>
+            <ul class="nav-links flex flex-column">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#">ABOUT ME</a></li>
                 <li><a href="#">EXPERIENCES</a></li>
@@ -20,14 +22,14 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <div class="hero flex">
+        <div class="hero flex flex-column">
             <figure class="col1-2 hero-img"><img src="assets/images/home-img.jpg" alt="home"></figure>
             <section class="col1-2 hero-section padding">
                 <h4>
                     WELCOME TO MY WEBSITE
                 </h4>
                 <h1 class="ptb">
-                    Hello, I am <strong>Stimulus</strong> currently based<br> in New York city.
+                    Hello, I am <strong>Stimulus</strong> currently based in New York city.
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere exercitationem doloremque libero? Corporis sint aspernatur omnis harum nesciunt animi aspernatur omnis harum nesciunt animi.
@@ -53,7 +55,7 @@
 
                 </p>
             </article>
-            <section class="flex skills span2">
+            <section class="flex flex-column skills span2">
                 <figure class="skills-img col1-2">
                     <img src="assets/images/about-img.jpg" alt="about">
                 </figure>
@@ -89,7 +91,7 @@
             </section>
             <section class="padding text-center interface summary">
                 <div class="icon pb">
-                    <i class="fas fa-desktop"></i>
+                    <i class="far fa-desktop-alt"></i>
                 </div>
                 <h3 class="ptb">
                     Interface Design
